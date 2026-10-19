@@ -1,0 +1,14 @@
+[project]
+name = "aqi"
+version = "0.1.0"
+description = "End-to-end PM2.5 forecasting system: ingestion, ML training, FastAPI serving, and monitoring."
+readme = "README.md"
+authors = [
+    { name = "Kopal05", email = "pareekkopal41@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"
