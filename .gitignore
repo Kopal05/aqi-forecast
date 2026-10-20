@@ -1,10 +1,32 @@
-# Python-generated files
+# --- Python bytecode and build output ---
 __pycache__/
-*.py[oc]
+*.py[cod]
 build/
 dist/
-wheels/
-*.egg-info
+*.egg-info/
 
-# Virtual environments
-.venv
+# --- Virtual environment ---
+.venv/
+
+# --- Environment files (secrets): commit only .env.example ---
+.env
+.env.*
+!.env.example
+
+# --- Test, lint and coverage caches ---
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# --- Generated model artifacts and local data (root folders only) ---
+/artifacts/
+/data/
+*.joblib
+*.pkl
+
+# --- IDE and OS files ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
