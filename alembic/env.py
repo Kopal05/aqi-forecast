@@ -6,6 +6,7 @@ from sqlalchemy import create_engine, pool
 
 from alembic import context
 from aqi.config import get_settings
+from aqi.db import models  # noqa: F401  (import registers the tables on Base.metadata)
 from aqi.db.base import Base
 
 config = context.config
